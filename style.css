@@ -1,0 +1,897 @@
+
+:root{
+    --myblue:#3DCFD3;
+    --myblack:#161616;
+    --mywhite:#ffffff;
+    --mygrey:#898989;
+    --mylight:#f2f2f2;
+}
+
+/* this is reset it is used in all websites so do it firstly */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased; 
+    /* webkit font smoothing property controls the application of anti-aliasing when fonts are rendered. */
+
+}
+
+body{
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+scroll-behavior: smooth;
+
+}
+
+header{
+    background: var(--myblack);
+    /* height: 700px; */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 79%, 0 100%);
+
+}
+
+.container{
+    max-width: 1152px;
+    padding-right: 0 15px;
+    margin: 0 auto;
+
+
+}
+@media ( min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media ( min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media ( min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media ( min-width:1200px){
+    .container{
+        max-width:1152px;
+    }
+}
+
+
+.coding-logo{
+    
+    width: 190px;
+    margin: -17px  55px;
+}
+
+header nav .left-nav a{
+    color: var(--mywhite);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    
+    
+    
+}
+
+header nav .left-nav a:hover{
+    color: var(--myblue);
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+
+
+header nav {
+    padding: 1rem 0;
+
+}
+
+header nav .branding{
+   margin-right: 3rem;
+
+}
+
+.btn{
+    padding: 0.6rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline:none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.primary-btn{
+    background: var(--myblue);
+    color: var(--myblack);
+
+}
+
+.primary-btn:hover{
+    background: transparent;
+    border-color: var(--myblue);
+    color: var(--myblue);
+}
+
+.my-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.my-details .left-details img{
+    width: 362px;
+
+}
+
+.my-details .right-details{
+    color: var(--mywhite);
+}
+
+.my-details .right-details h6{
+    font-size: 1.6rem;
+    color: var(--myblue);
+    margin-bottom: 1rem;
+}
+
+.my-details .right-details h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height:1 ;
+    /* line-height property is used for make less gap between website and developmenmt */
+    margin-bottom: 2rem;
+    
+}
+
+.my-details .right-details h1 span{
+    color: var(--myblue);
+}
+
+.my-details .right-details p{
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+.cv-download-btn{
+    background: transparent;
+    color: var(--myblue);
+    border-color: var(--myblue);
+    margin: 0 15px;
+}
+
+
+.cv-download-btn:hover{
+    background: var(--myblue);
+    color: var(--myblack);
+}
+
+.left-details, .right-details{
+    flex: 1;
+}
+
+.left-details{display: flex;
+    justify-content: center;
+
+}
+
+.right-details{
+    margin-top: -7rem;
+}
+
+ .about-img{
+   height : 465px;
+   border: 2px solid var(--mygrey) ;
+   margin-left: 90px;
+  
+}
+
+
+section {
+    padding:  6rem 0;
+    
+}
+
+.container-2{
+    display: flex;
+    align-items: center;
+    padding: 0 65px;
+    
+    
+}
+.about-right, .about-left{
+    flex: 1;
+    padding-right:80px ;
+}
+
+.about-right h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+
+.about-right h1 span{
+    color: var(--myblue);
+}
+
+.about-right h3{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+.about-right  p{
+    font-family: 'Lato', sans-serif;
+    color: var(--mygrey) ;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about-social{
+    display: flex;
+    align-items: center;
+ 
+    
+}
+
+.about-social  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .3s ease;
+    margin-right: 0.5rem;
+    
+}
+
+.social-logo{
+    width: 40px;
+
+  
+
+}
+
+.about-social a:hover{
+    background: var(--myblue)
+}
+
+.section-heading{
+    color: var(--myblack);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--myblue);
+}
+
+.section-heading + p{
+    color: var(--mygrey);
+    font-family: 'Lato', sans-serif ;
+    margin-bottom: 8rem;
+    text-align: center;
+
+}
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    padding: 0 100px;
+
+
+}
+.services{
+    background: var(--mylight);
+
+}
+
+.card{
+    background: var(--mywhite) ;
+    padding: 3rem 2rem;
+    position: relative; 
+    padding-top: 3rem;
+    text-align: center;
+    transition: all .3s ease;
+
+
+}
+
+.top-card{
+    position: absolute;
+    top: -6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border-radius: 80px; */
+    width: 100px;
+}
+.card img:hover{
+    width: 110px;
+
+}
+
+.bottom-card{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border-radius: 80px; */
+    width: 80px;
+}
+
+.bottom-card:hover{
+    width: 90px;
+
+}
+.git-card{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border-radius: 80px; */
+    width: 100px;
+}
+
+
+
+.card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.card p{
+    font-family: 'Lato', sans-serif;
+    color:var(--mygrey);
+    line-height: 1.6rem;
+ 
+}
+
+.card:hover{
+    background:var(--myblack);
+}
+
+.card:hover h2 , .card:hover p{
+    color: var(--mywhite);
+}
+
+.freelancer{
+    /* display: flex; */
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/freelancer.jpg) ;
+    background-repeat:no-repeat;
+    color: var(--mywhite);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 80%, 0 100%);
+    padding-bottom: 15rem;
+    height: 31rem;
+    
+}
+
+.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.freelancer p{
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 2rem;
+    
+}
+
+.reviews img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom:  2rem;
+    display: inline;
+    
+    
+}
+
+
+.slide{
+    text-align: center;
+    padding: 0 26rem;
+    
+    
+}
+
+.slide p{
+    font-family: 'Lato',sans-serif;
+    color: var(--mygrey) ;
+    margin-bottom: 1rem;
+}
+
+.slide span{
+    font-size: 0.8rem;
+}
+
+
+.slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+    
+    
+}
+
+.slider-dots{
+    margin-top: 2rem;
+}
+
+.slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--mygrey);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider-dots  li.slick-active button{
+    background: var(--myblue);
+    width: 20px;
+}
+
+.projects{
+    background: var(--myblack);
+    height: 45rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+}
+
+
+.projects-img{
+    width: 98%;
+    height: 100%;
+    
+}
+
+.projects .section-heading{
+    color: var(--mywhite);
+}
+
+
+
+
+.card-wrapper-2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5rem;
+    padding: 0 170px;
+    /* margin-left: 124px;
+    margin-right: 63px; */
+    
+}
+
+/* this part is little bit confusing i want to do that when someone hover on the projects img then the img will blur and the project name is shown over it
+so what i do first make the text opacity 0 so with out hover it is not shown and its z-index is 1 and make hover function on img is blur and .card-2:hover .overlay's opacity is 1 means when i hover on card-2 then the .overlay class's opacity will inc. and text is shown*/
+.card-2{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .20s ease;
+    z-index: 1;
+}
+
+.overlay a{
+    color: var(--myblack);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 30px;
+    font-family: 'Lato',sans-serif;
+    
+    
+}
+
+
+
+.card-2:hover img{
+    filter: blur(4px);
+    transform: scale(1.1);
+
+}
+.card-2:hover .overlay{
+opacity: 1;
+}
+
+
+
+.contact-img{
+    width: 15%;
+   
+}
+
+.card-wrapper-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    padding: 0px 250px;
+
+
+}
+.container-6 .section-heading{
+    font-size: 24px;
+}
+
+.card-3{
+    text-align:center;
+}
+
+.card-3 img{
+    margin-bottom: 1rem;
+}
+
+.card-3 h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.card-3 h6{
+    font-size: 1rem;
+    color: var(--mygrey);
+    font-weight: 100;
+    margin-bottom: 5rem;
+}
+
+.contacts .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+
+}
+
+.contacts .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.input-wrap-2 input{
+    margin-bottom: 1rem ;
+}
+
+.contacts input{
+    padding: 0.6rem;
+    border: 1px solid var(--mylight);
+    font-size: 0.9rem;
+  
+}
+.input-wrap-2 textarea{
+   border: 1px solid var(--mylight);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.contacts input:focus ,.contacts textarea:focus{
+    outline: none;
+}
+
+.form-class{
+    padding: 0 100px;
+}
+
+.btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+.copyright-section{
+  
+    color: var(--mygrey);
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    font-weight: 300;
+}
+
+
+.footer-social-logo img{
+    width: 40px;
+    margin-right: 1rem;
+
+    
+}
+
+footer{
+    background: #000000;
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+.footer-logo{
+    width: 307px;
+    margin-bottom: 2rem;
+    margin-top: -37px;
+}
+
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--mylight);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem ;
+    transform: translateX(+100%);
+    transition: all .5s ease-in-out;
+    
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.cross-img{
+    
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cross-img img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+    
+}
+
+.mobile-nav ul li a{
+    color: var(--myblack);
+    text-decoration: none;
+    font-size: 2rem;
+    
+}
+
+/* it is for tablet */
+@media (max-width:1002px){
+
+    header #main-nav{
+        display: none;
+    }
+
+    .hamberger{
+        display: block;
+
+    }
+    .my-details .left-details img {
+        width: 310px;
+    }
+    .my-details .right-details h1 {
+        font-size: 3rem;
+        
+    }
+    .my-details{
+        padding-top:9rem ;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 86%, 0 100%);
+    }
+    .cv-download-btn {
+       
+        margin-top: 15px
+    }
+    .container-2 {
+        
+        padding: 0px 11px;
+    }
+    .about-img {
+        height: 400px;
+        margin-left: 69px;
+    }
+    .card-wrapper {
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .slide {
+        text-align: center;
+        padding: 0 4rem;
+    }
+    
+    .projects {
+       
+        height: 67rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+    }
+    .card-wrapper-2 {
+       
+        grid-template-columns: repeat(1,1fr);
+       
+        padding: 0 151px;
+    }
+
+    .card-wrapper-3 {
+       
+        padding: 0px 58px;
+    }
+}
+
+/* for mobile iphone 6 7 8  375*667 */
+
+@media (max-width:576px){
+    .my-details {
+       
+        flex-direction: column;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 82% 96%, 0 100%);
+    }
+    .right-details {
+        position: absolute;
+        top: 228px;
+        padding: 68px 15px;
+        padding-right: 58px;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+    
+    .my-details .left-details img {
+        
+        width: 384px;
+        margin-top: -97px;
+        margin-right: 14px;
+        
+    }
+    .my-details .right-details h6 {
+        font-size: 21px;
+       
+     
+    }
+    .my-details .right-details h1 {
+        font-size: 30px;
+        
+    }
+
+    .container-2 {
+        display: flex;
+        align-items: center;
+        padding: 0 65px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        height: 344px;
+        margin-left: 69px;
+    }
+    .about-right{
+    padding-right: 0px;
+    text-align: center;
+    padding-top: 3rem;
+
+    }
+
+    .about-social {
+        display: flex;
+        align-items: center;
+        padding: 18px 42px;
+    }
+    .card-wrapper {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 143px;
+        width: 22rem;
+        padding-left: 49px;
+        padding-right: 27px;
+
+    }
+
+    .freelancer h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    }
+
+    .freelancer p {
+        font-family: 'Lato',sans-serif;
+        margin-bottom: 5rem;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .freelancer {
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/free.jpg);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 94%, 0 100%);
+       
+    }
+    .projects-img {
+        width: 80%;
+        height: 100%;
+    }
+    .card-wrapper-2 {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 0px;
+        margin-left: 39px;
+        margin-right: -32px;
+    }
+    .overlay {
+       
+        margin-left: -33px;
+    }
+
+    .card-wrapper-3 {
+        
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0px;
+    }
+    
+    .contacts .input-wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+}
