@@ -535,13 +535,13 @@ opacity: 1;
 
 
 .contact-img{
-    width: 15%;
+    width: 8%;
    
 }
 
 .card-wrapper-3{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap: 1rem;
     padding: 0px 250px;
 
@@ -550,6 +550,9 @@ opacity: 1;
 .container-6 .section-heading{
     font-size: 24px;
 }
+
+
+
 
 .card-3{
     text-align:center;
